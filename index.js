@@ -1,28 +1,3 @@
-/**
- * This library extends the swagger functionality, adding
- * support for Faker.js attributes in the swagger spec file,
- * by default it is the swagger.yaml file.
- * Also adds support for generating fake values dynamically
- * on each request.
- *
- * Current Fake data provider: 
- *    Faker.js -> https://github.com/Marak/faker.js/wiki
- * 
- * Example attributes [swagger.xaml]
- *    firstName:
- *      type: "string"
- *      x-faker: "jf.name.firstName()"
- * 
- * Requires initial configuration in index.js to be able
- * to intercept the responce before it is send to the receiver.
- * 
- * Example configuration [index.js]
- *   app.use((req, res, next) => justFake.intercept(req)(middleware.swaggerRouter(options)(req, res, next)));
- * 
- * Added support for query params
- *   x-faker: "[{username}, {password}]"
- */
-
  // TODO(Domi): Add multi value returns
  // TODO(Domi): Fakes only on 200 returns
 

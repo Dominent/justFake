@@ -13,9 +13,11 @@
 >Current fake data provider:
     [Faker.js](https://github.com/Marak/faker.js/wiki)
 
-## Example Attributes
+## Attributes
+>Valid Custom Keys supported by swagger editor 
 
->Example attributes -> swagger.xaml
+### Example -> swagger.xaml
+
 ```yaml
    firstName:
       type: "string"
@@ -27,7 +29,7 @@
 >Requires initial configuration in index.js to be able
 to intercept the responce before it is send to the receiver.
  
-### Example configuration -> index.js
+### Example -> index.js
 
 ```javascript
    app.use((req, res, next) => justFake.intercept(req)
@@ -37,14 +39,25 @@ to intercept the responce before it is send to the receiver.
 ## Providers
 
 * **Query Provider**
-    > Added support for usage of query params in generated data. 
+    > Added support for query params in generated data. 
     
     ```yaml
-        /authentication/login?username=John&password=Doe
+        URL -> /authentication/login?username=John&password=Doe
 
         x-faker: "[{username}, {password}]" -> [
             'John',
             'Doe'
         ]
     ```
+
+## Register Providers
+
+>Allows to easily extend the current functionality by registering a new provider. The providers are called when the statement is being processed.
+
+### Example
+```javascript
+justFake.register((statement, req) => {
+  // Do your magic!
+})
+```
  
