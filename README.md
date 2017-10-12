@@ -16,7 +16,7 @@
 ## Attributes
 >Valid Custom Keys supported by swagger editor 
 
-### Example -> swagger.xaml
+### Example -> swagger.yaml
 
 ```yaml
    firstName:
