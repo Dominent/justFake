@@ -2,7 +2,7 @@
 
 ## Description
 
- >This library extends the swagger functionality, adding
+ >This library extends the [swagger](https://swagger.io/) functionality, adding
  support for Faker.js attributes in the swagger spec file,
  by default it is the swagger.yaml file.
  Also adds support for generating fake values dynamically
@@ -11,7 +11,7 @@
 ## Fake Data Provider
 
 >Current fake data provider:
-    [ Faker.js](https://github.com/Marak/faker.js/wiki)
+    [Faker.js](https://github.com/Marak/faker.js/wiki)
 
 ## Example Attributes
 
@@ -37,7 +37,7 @@ to intercept the responce before it is send to the receiver.
 ## Providers
 
 * **Query Provider**
-    > Added support for usage of query params in generating data. 
+    > Added support for usage of query params in generated data. 
     
     ```yaml
         /authentication/login?username=John&password=Doe
