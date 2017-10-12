@@ -1,0 +1,35 @@
+{
+  "name": "justfake",
+  "version": "1.0.0",
+  "description": "JustFake is an extensible library that allows for fast and easy faking of data, which is generated on every request. Extends the swagger generated project functionality. Allows for describing the desired data in the swagger spec file.  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dominent/justFake.git"
+  },
+  "keywords": [
+    "swagger",
+    "faker.js",
+    "fake",
+    "data",
+    "web",
+    "api"
+  ],
+  "author": "Petromil \"Dominent\" Pavlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dominent/justFake/issues"
+  },
+  "homepage": "https://github.com/Dominent/justFake#readme",
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
+  "peerDependencies": {
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "swagger-tools": "0.10.1"
+  }
+}
